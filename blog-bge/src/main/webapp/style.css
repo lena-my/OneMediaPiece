@@ -1,0 +1,308 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* keeps the div dimensions although the use of padding */
+    text-decoration: none; /* delete underline links */
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+a {
+    text-decoration: none;
+}
+/**************************************************************/
+
+.flexContainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.innerContainer {
+    max-width: 1200px;
+    margin:0 auto;
+} 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.innerContainer {
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #747E7E;
+}
+
+.title {
+    font-family: 'EB Garamond', serif;
+    font-size: 3.6rem;
+    text-align: center;
+    color: black;
+    margin: 1rem;
+}
+
+.title a {
+    color: black;
+}
+
+/***************** MENU NAV *********************/
+
+nav li {
+    list-style: none;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 5rem 2rem;
+
+}
+
+.navItem {
+	margin-left: 5rem;
+}
+
+.navLink {
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #00CCBF;
+}
+
+.navLink:hover {
+	color: #72F2EB;
+}
+
+.navMenu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navArticles {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #00CCBF;
+}
+
+.inscrire {
+    color: #FF5F5D;
+}
+
+/***************** TITRES *********************/
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 95, 93, 1);
+    margin-top: 2rem;
+    margin: 2rem 0rem;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+    font-size: 2.3rem;
+    color: #3F7C85;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0rem;
+}
+
+.contenuArticle {
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+
+
+/****************************************/
+
+.aboutArticle {
+    padding: 2rem 0rem;
+}
+
+
+/**************** Link **********************/
+
+.linkText {
+    font-size: 1.6rem;
+    color: #00CCBF;
+    margin-bottom: 2rem;
+}
+
+.linkText:hover {
+	color:  #72F2EB;
+}
+
+.linkDelete {
+	font-size: 1.6rem;
+    color: #FF5F5D;
+    margin-bottom: 2rem;
+}
+
+.linkDelete:hover {
+    color: #00CCBF;
+}
+
+/***************** FORMS *********************/
+
+form {
+	margin: 8rem 0 8rem 0;
+}
+
+.formItems {
+    margin: 2rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 45rem;
+    padding: 0.8rem;
+}
+
+input[type="text"] {
+	font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+input[type="submit"] {
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	background-color: #3F7C85;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 2rem;
+} 
+
+input[type="submit"]:hover {
+	color: #3F7C85;
+	background-color: white;
+	border: 3px solid #3F7C85;
+}
+
+.inputTitleArticle {
+	width: 1100px;
+}
+
+.textAreaArticle {
+	font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    font-size: 1.5rem;
+	width: 1100px;
+	height: 1000px;
+	padding: 0.8rem;
+}
+
+.textAreaComment{
+	font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    font-size: 1.5rem;
+	width: 1000px;
+	height: 50px;
+	padding: 0.8rem;
+}
+
+.buttonsRadioField {
+	display: flex;
+	justify-content: center;
+}
+
+/****************************************/
+
+li {
+    list-style: none;
+}
+
+.listUser li {
+	padding: 1rem 0;
+
+}
+
+.listUser li a {
+	color: #3F7C85;
+	font-size: 1.6rem;
+	font-weight: bold;
+	
+}
+
+
+.listUser li a:hover {
+	color: #72F2EB;
+}
+
+
+/***************** FOOTER ***********************/
+footer {
+    height: 15rem;
+    background-color: #3F7C85;
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+    width: 100%;
+    bottom: 0;
+}
+
+#titleFooter {
+    font-family: 'EB Garamond', serif;
+    font-size: 3rem;
+    color: black;
+}
+
+#titleFooter a {
+    color: black;
+}
+
+#titreFooter a:hover {
+    color:#d1e2e2
+}
+
+footer p {
+    font-size: 1.6rem;
+    color: #d1e2e2;
+}
+
+
+
+/***************** Table ***********************/
+
+td {
+	text-align: center;
+	padding: 1rem;
+	vertical-align: center;
+	text-align: left;
+}
+
+th {
+	text-align: center;
+}
+
+/********************accordion*****************************/
+
+
+
+
+.commentaireContainer {
+	margin: 3rem 0;
+}
+
+
+.commentairesUpdateModereSection p {
+	text-align: center;
+}
